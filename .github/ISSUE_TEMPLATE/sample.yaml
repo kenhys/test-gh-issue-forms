@@ -56,3 +56,11 @@ body:
         Write your configuration here
     validations:
       required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Your Error Log
+      description: Write your ALL error log here
+      render: shell
+    validations:
+      required: true
