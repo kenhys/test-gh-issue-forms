@@ -5,7 +5,7 @@ body:
     attributes:
       value: |
         Check [CONTRIBUTING guideline](https://github.com/fluent/fluentd/blob/master/CONTRIBUTING.md) first and here is the list to help us investigate the problem.
-  - type: input
+  - type: textarea
     id: description
     attributes:
       label: Describe the bug
