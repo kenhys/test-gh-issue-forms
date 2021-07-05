@@ -1,11 +1,11 @@
 name: Minimum Bug Report
-description: Create a report with a procedure for reproducing the bug
-title: "BUG: "
-labels: [bug]
+description: File a bug report
+title: "[Bug]: "
+labels: [bug, triage]
 assignees:
   - octocat
 body:
   - type: markdown
     attributes:
       value: |
-        Check [CONTRIBUTING guideline](https://github.com/fluent/fluentd/blob/master/CONTRIBUTING.md) first and here is the list to help us investigate the problem.
+        Thanks for taking the time to fill out this bug report!
