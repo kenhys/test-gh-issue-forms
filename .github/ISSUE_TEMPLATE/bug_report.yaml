@@ -49,7 +49,7 @@ body:
     attributes:
       label: Your Configuration
       description: |
-        Write your configuration here
+        Write your configuration here. Minimum reproducible fluentd.conf is recommended.
     validations:
       required: true
   - type: textarea
