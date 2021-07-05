@@ -69,7 +69,5 @@ body:
     attributes:
       label: Additional context
       description: Additional context
-    description: |
-      Add any other context about the problem here.
     validations:
       required: false
