@@ -1,6 +1,7 @@
 name: Bug Report min
 description: Create a report with a procedure for reproducing the bug
 title: "BUG: "
+labels: [bug]
 body:
   - type: markdown
     attributes:
