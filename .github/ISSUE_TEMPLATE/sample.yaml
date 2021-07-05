@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Check [CONTRIBUTING guideline](https://github.com/fluent/fluentd/blob/master/CONTRIBUTING.md) first and here is the list to help us investigate the problem.
   - type: input
     id: contact
     attributes:
