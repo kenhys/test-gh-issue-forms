@@ -1,4 +1,4 @@
-name: Bug Report min
+name: Minimum Bug Report
 description: Create a report with a procedure for reproducing the bug
 title: "BUG: "
 labels: [bug]
