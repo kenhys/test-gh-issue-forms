@@ -2,7 +2,6 @@ name: Bug Report
 description: Create a report with a procedure for reproducing the bug
 body:
   - type: markdown
-    id: notification
     attributes:
       value: |
         Check [CONTRIBUTING guideline](https://github.com/fluent/fluentd/blob/master/CONTRIBUTING.md) first and here is the list to help us investigate the problem.
@@ -17,14 +16,14 @@ body:
   - type: textarea
     id: reproduce
     attributes:
-      label: *To Reproduce
-      description: Steps to reproduce the behavior**
+      label: To Reproduce
+      description: Steps to reproduce the behavior
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: **Expected behavior**
+      label: Expected behavior
       description: A clear and concise description of what you expected to happen
     validations:
       required: true
@@ -33,9 +32,9 @@ body:
     attributes:
       label: Your Environment
       description: |
-        **     p  -- Fluentd or td-agent version: `fluentd --version` or `td-agent --version`
+        - Fluentd or td-agent version: `fluentd --version` or `td-agent --version`
         - Operating system: `cat /etc/os-release`
-        - Kernel version: `uname -r
+        - Kernel version: `uname -r`
 
         Tip: If you hit the problem with older fluentd version, try latest version first.
       value: |
@@ -55,12 +54,11 @@ body:
     validations:
       required: true
   - type: textarea
-    id: error_log
+    id: logs
     attributes:
       label: Your Error Log
-      description: |
-        Write your **ALL** error log here
-      render: markdown
+      description: Write your ALL error log here
+      render: shell
     validations:
       required: true
   - type: textarea
