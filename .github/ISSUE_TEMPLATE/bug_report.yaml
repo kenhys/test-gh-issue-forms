@@ -1,63 +1,31 @@
-name: Bug Report
-description: Create a report with a procedure for reproducing the bug
+name: Bug Report for https://docs.fluentd.org/
+description: Create a report about Fluentd's documentation
 body:
   - type: markdown
     attributes:
       value: |
-        Check [CONTRIBUTING guideline](https://github.com/fluent/fluentd/blob/master/CONTRIBUTING.md) first and here is the list to help us investigate the problem.
+        This repository tracks an issue for Fluentd's documentation.
+        If you found a bug of Fluentd, please forward it to https://github.com/fluent/fluentd.
+        Do not create an issue about usage of Fluentd itself. Ask on https://discuss.fluentd.org/!
   - type: textarea
     id: description
     attributes:
       label: Describe the bug
-      description: A clear and concise description of what the bug is
+      description: A clear and concise description of what the bug in https://docs.fluentd.org
     validations:
       required: true
   - type: textarea
-    id: reproduce
+    id: link
     attributes:
-      label: To Reproduce
-      description: Steps to reproduce the behavior
+      label: Link to the problematic documentation
+      description: Write the actual URL
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: Expected behavior
+      label: Expected explanation
       description: A clear and concise description of what you expected to happen
-    validations:
-      required: true
-  - type: textarea
-    id: environment
-    attributes:
-      label: Your Environment
-      description: |
-        - Fluentd or td-agent version: `fluentd --version` or `td-agent --version`
-        - Operating system: `cat /etc/os-release`
-        - Kernel version: `uname -r`
-
-        Tip: If you hit the problem with older fluentd version, try latest version first.
-      value: |
-        - Fluentd version:
-        - TD Agent version:
-        - Operating system:
-        - Kernel version:
-      render: markdown
-    validations:
-      required: true
-  - type: textarea
-    id: configuration
-    attributes:
-      label: Your Configuration
-      description: |
-        Write your configuration here. Minimum reproducible fluentd.conf is recommended.
-    validations:
-      required: true
-  - type: textarea
-    id: logs
-    attributes:
-      label: Your Error Log
-      description: Write your ALL error log here
-      render: shell
     validations:
       required: true
   - type: textarea
